@@ -1,8 +1,8 @@
-package CreatitionalDP.FactoryDP;
+package CreationalDP.AbstractFactoryDP;
 
 public class Circle implements Shape{
     @Override
     public void draw() {
-        System.out.println("inside Circle.draw()");
+        System.out.println("Circle");
     }
 }

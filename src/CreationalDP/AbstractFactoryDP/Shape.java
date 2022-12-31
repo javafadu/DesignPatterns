@@ -1,8 +1,6 @@
-package CreatitionalDP.FactoryDP;
+package CreationalDP.AbstractFactoryDP;
 
 public interface Shape {
-
     void draw();
-
 
 }
