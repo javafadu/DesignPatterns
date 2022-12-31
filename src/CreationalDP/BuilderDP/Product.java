@@ -4,12 +4,12 @@ import java.time.LocalDateTime;
 
 public class Product {
 
-    private Long id;
-    private String name;
+    private Long id;  // mandatory field
+    private String name; // mandatory field
     private LocalDateTime date;
     private boolean inStock;
     private String description;
-    private int price;
+    private int price; // mandatory field
 
     // Default Constructor
     public Product() {
@@ -23,6 +23,18 @@ public class Product {
         this.inStock = inStock;
         this.description = description;
         this.price = price;
+    }
+
+    public Product(ProductBuilder productBuilder) {
+
+        this.id=productBuilder.id;
+        this.name=productBuilder.name;
+        this.date=productBuilder.date;
+        this.inStock=productBuilder.inStock;
+        this.description=productBuilder.description;
+        this.price=productBuilder.price;
+
+
     }
 
     // Getter & Setter
@@ -90,4 +102,53 @@ public class Product {
                 ", price=" + price +
                 '}';
     }
+
+
+    // Creating a static class
+    public static class ProductBuilder {
+        private Long id;
+        private String name;
+        private LocalDateTime date;
+        private boolean inStock;
+        private String description;
+        private int price;
+
+        public ProductBuilder id(Long id) {
+            this.id=id;
+            return this;
+        }
+
+        public ProductBuilder name(String name) {
+            this.name=name;
+            return this;
+        }
+
+        public ProductBuilder date(LocalDateTime date) {
+            this.date=date;
+            return this;
+        }
+        public ProductBuilder inStock(boolean inStock) {
+            this.inStock=inStock;
+            return this;
+        }
+        public ProductBuilder description(String description) {
+            this.description=description;
+            return this;
+        }
+        public ProductBuilder price(int price) {
+            this.price=price;
+            return this;
+        }
+
+
+        public Product build() {
+            Product product = new Product(this);
+            return product;
+        }
+
+
+
+    }
+
+
 }
