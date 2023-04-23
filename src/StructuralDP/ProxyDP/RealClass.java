@@ -4,6 +4,7 @@ public class RealClass implements ImageGenerator{
 
     private String fullPath;
 
+    // constructor
     public RealClass(String fullPath) {
         this.fullPath=fullPath;
     }
@@ -11,7 +12,15 @@ public class RealClass implements ImageGenerator{
 
     @Override
     public void showImage() {
-        System.out.println("Image Show : "+fullPath);
+        System.out.println("Show Image: "+fullPath);
+    }
+
+    public void changeImage() {
+
+    }
+
+    public void changeFormatOfImage() {
+
     }
 
     public void getName() {
