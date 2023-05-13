@@ -1,0 +1,10 @@
+
+- Car Repair Specialist
+- Car Paint Specialist
+- Car Sales Specialist
+- Car Insurance Specialist
+
+Someone calls and asks a question about car maintenance.
+
+In the middle there is a call center guy, he/she forwards the question to the related specialist
+when he/she receive the answer, passes the answer to the customer

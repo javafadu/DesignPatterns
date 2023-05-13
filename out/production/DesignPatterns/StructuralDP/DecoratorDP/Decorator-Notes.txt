@@ -1,0 +1,9 @@
+
+Sample:
+
+Iphone 14
+Iphone 14Pro
+Iphone 14ProMax
+
+The seperating concrete classes and implemented interfaces
+Phone - PhoneDecorator - Iphone Clasess

@@ -1,0 +1,18 @@
+
+Sample:
+
+R&N Department:
+- 5 workers
+
+Sales Department:
+- 7 workers
+
+Finance Department:
+- 10 workers
+
+
+- Main : getPersonnel()
+- 
+ -- R&D
+ -- Sales
+ -- Finance

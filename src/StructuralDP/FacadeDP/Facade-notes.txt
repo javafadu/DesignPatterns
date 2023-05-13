@@ -1,1 +1,8 @@
 A single class that represents an entire subsystem
+
+Sample:
+we request a text from the user
+we will encode and save it into the database
+the user chooses the algorithm (AES, MD5, SHA) of encoding
+
+
